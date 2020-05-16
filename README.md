@@ -26,7 +26,7 @@ Ouvrez [http://localhost:3000](http://localhost:3000) pour y accéder depuis nav
 ### Clé API
 
 Pour utiliser l'API Marvel il vous faut une clé. Vous pouvez en obtenir une [ici](https://developer.marvel.com/).<br/>
-Des instructions pour utiliser votre propre clé se trouvent dans les fichiers du répertoire `src/api/`.
+Des instructions pour utiliser votre propre clé se trouvent dans les fichiers du répertoire `src/customs/`.
 
 ## Amélioration à venir
 
@@ -54,7 +54,7 @@ or
 ### API key
 
 To use the Marvel API you need a key. You can get one [here](https://developer.marvel.com/).<br/>
-Instructions on how to use your own key can be found within the files of `src/api/` directory.
+Instructions on how to use your own key can be found within the files of `src/customs/` directory.
 
 Ths will run the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
