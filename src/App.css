@@ -16,7 +16,7 @@
   color: var(--white);
 }
 .App-header h1 {
-  padding: 5px;
+  padding: 0 3px;
   background-color: var(--red);
 }
 
@@ -35,6 +35,13 @@
   padding: 0 10vw;
   background-color: var(--white);
   color: var(--black);
+}
+
+.message-box {
+  display: block;
+  margin: 3vh auto 3vh auto;
+  width: max-content;
+  font-size: calc(10px + 2vmin);
 }
 
 a {

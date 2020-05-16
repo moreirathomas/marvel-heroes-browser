@@ -1,7 +1,7 @@
 // A custom MD5 function to not increase this size of the app with another npm package
 // Credits to https://css-tricks.com/snippets/javascript/javascript-md5/
 
-const md5 = function (string) {
+const MD5 = function (string) {
   function RotateLeft(lValue, iShiftBits) {
     return (lValue << iShiftBits) | (lValue >>> (32 - iShiftBits));
   }
@@ -230,4 +230,4 @@ const md5 = function (string) {
 
   return temp.toLowerCase();
 };
-export default md5;
+export default MD5;
