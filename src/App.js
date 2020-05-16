@@ -26,7 +26,11 @@ function Footer() {
           Moreira
         </p>
         <p>
-          See on <a href="#">GitHub</a>.
+          See on{' '}
+          <a href="https://github.com/moreirathomas/marvel-heroes-browser">
+            GitHub
+          </a>
+          .
         </p>
       </div>
     </footer>
