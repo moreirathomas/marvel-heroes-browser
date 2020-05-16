@@ -1,0 +1,28 @@
+.full-overview {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.character-data > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.back-button {
+  display: block;
+  margin: 0 auto;
+  width: 130px;
+  height: 40px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 2px solid var(--black);
+  transition: all ease-in-out 0.25s;
+}
+
+.back-button:hover {
+  cursor: pointer;
+  color: var(--white);
+  background: var(--black);
+  border: 2px solid var(--black);
+}

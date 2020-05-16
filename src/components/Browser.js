@@ -1,5 +1,6 @@
 import React from 'react';
 import { fetchApiByName } from '../hooks/fetchApi';
+import { Link } from 'react-router-dom';
 
 class Browser extends React.Component {
   constructor(props) {
@@ -38,11 +39,13 @@ class Browser extends React.Component {
 
     if (search !== '' && total > 0) {
       return (
-        <div className="result-container">
+        <div className="results-container">
           {data.results.map((result) => (
-            <div className="charater" key={result.id}>
-              {result.name}
-              {result.id}
+            <div className="character-preview" key={result.id}>
+              <Link to={'/character/' + result.id}>
+                <h3 className="character-name">{result.name}</h3>
+              </Link>
+              <p className="character-id-num">Id Num: {result.id}</p>
             </div>
           ))}
         </div>
@@ -55,21 +58,19 @@ class Browser extends React.Component {
     const { loading } = this.state;
 
     return (
-      <div className="container">
-        {/* header */}
-        <h1 className="header">Marvel Heroes Browser</h1>
+      <div className="browser">
         {/* input */}
-        <label className="search-label" htmlFor="search-input">
+        <div className="search-container">
           <input
-            className=""
+            autoComplete="off"
+            className="search-field"
             type="text"
             value={search}
-            id="search-input"
-            placeholder="Search for Heroes..."
+            placeholder="Search"
             onChange={this.handleSearch}
           ></input>
-          {/* <i className="fas fa-search"></i> */}
-        </label>
+        </div>
+        {/* <i className="fas fa-search"></i> */}
         {/* results grid */}
         {!loading ? this.renderResults() : <div>Loading</div>}
       </div>
