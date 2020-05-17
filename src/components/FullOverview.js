@@ -17,7 +17,7 @@ function FullOverview({ match }) {
             alt={data.name + ' thumbnail'}
             src={
               data.thumbnail.path +
-              '/standard_amazing.' +
+              '/landscape_xlarge.' +
               data.thumbnail.extension
             }
           ></img>
