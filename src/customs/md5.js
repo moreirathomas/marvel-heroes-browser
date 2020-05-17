@@ -1,4 +1,4 @@
-// A custom MD5 function to not increase this size of the app with another npm package
+// A custom MD5 function to not increase the size of the app with another npm package
 // Credits to https://css-tricks.com/snippets/javascript/javascript-md5/
 
 const MD5 = function (string) {

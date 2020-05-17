@@ -11,9 +11,19 @@ function FullOverview({ match }) {
   const renderCharacter = () => {
     return (
       <div className="character-data">
+        <div className="thumbnail-container">
+          <img
+            className="character-thumbnail"
+            alt={data.name + ' thumbnail'}
+            src={
+              data.thumbnail.path +
+              '/standard_amazing.' +
+              data.thumbnail.extension
+            }
+          ></img>
+        </div>
         <h2 className="character-name">{data.name}</h2>
         <p className="character-description">{data.description}</p>
-        {/* <img src={data.thumbnail.path}></img> */}
       </div>
     );
   };

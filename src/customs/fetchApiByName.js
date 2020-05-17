@@ -22,6 +22,7 @@ const fetchApiByName = (name) => {
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json;charset=UTF-8',
+      Origin: 'http://localhost:3000',
     },
     params: {
       ts: ts,

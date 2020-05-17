@@ -15,7 +15,7 @@ const PRIVATE_KEY = process.env.REACT_APP_PRIVATE_KEY;
 //                         //
 
 function useFetchApiById(id) {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState({});
   const [loading, setLoading] = useState(true);
 
   const ts = new Date().getTime();
@@ -46,8 +46,11 @@ function useFetchApiById(id) {
       setData(json.data.results[0]);
       setLoading(false);
     }
-    fetchUrl();
-  }, [id, options]);
+    if (loading) {
+      fetchUrl();
+    }
+  }, [data, id, loading, options]);
+
   return [data, loading];
 }
 export { useFetchApiById };

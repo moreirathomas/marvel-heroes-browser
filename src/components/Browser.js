@@ -55,7 +55,7 @@ class Browser extends React.Component {
                 <div className="thumbnail-container">
                   <img
                     className="character-thumbnail"
-                    alt={result.name + ' thumabnail'}
+                    alt={result.name + ' thumbnail'}
                     src={
                       result.thumbnail.path +
                       '/standard_amazing.' +
