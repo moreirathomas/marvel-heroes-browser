@@ -51,7 +51,7 @@ class Browser extends React.Component {
           {data.results.map((result) => (
             <div className="character-preview" key={result.id}>
               {/* thumbnail */}
-              <Link to={'/character/' + result.id}>
+              <Link to={'/marvel-heroes-browser/character/' + result.id}>
                 <div className="thumbnail-container">
                   <img
                     className="character-thumbnail"
@@ -65,7 +65,7 @@ class Browser extends React.Component {
                 </div>
               </Link>
               {/* text info */}
-              <Link to={'/character/' + result.id}>
+              <Link to={'/marvel-heroes-browser/character/' + result.id}>
                 <h3 className="character-name">{result.name}</h3>
               </Link>
               <p className="character-id-num">Id Num: {result.id}</p>

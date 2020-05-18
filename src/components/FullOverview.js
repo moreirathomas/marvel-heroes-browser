@@ -35,7 +35,7 @@ function FullOverview({ match }) {
       ) : (
         <div className="message-box">Loading</div>
       )}
-      <Link to="/">
+      <Link to="/marvel-heroes-browser">
         <button className="back-button">Back</button>
       </Link>
     </div>

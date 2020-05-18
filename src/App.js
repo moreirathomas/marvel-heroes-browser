@@ -44,9 +44,13 @@ function App() {
         <Header />
         <main className="App-main">
           <Switch>
-            <Route exact path="/" component={Browser}></Route>
             <Route
-              path="/character/:id"
+              exact
+              path="/marvel-heroes-browser"
+              component={Browser}
+            ></Route>
+            <Route
+              path="/marvel-heroes-browser/character/:id"
               render={(props) => <FullOverview {...props} />}
             ></Route>
           </Switch>
