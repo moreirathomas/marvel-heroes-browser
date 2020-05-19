@@ -6,8 +6,6 @@ function FullOverview({ match }) {
   const id = match.params.id;
   const [data, loading] = useFetchApiById(id);
 
-  console.log(data);
-
   const renderCharacter = () => {
     return (
       <div className="character-data">
